@@ -1,0 +1,6 @@
+export * from './main'
+export * from './hero'
+export * from './primary-feature'
+export * from './secondary-feature'
+export * from './review'
+export * from './common'

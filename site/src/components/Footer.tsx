@@ -7,6 +7,7 @@ import { TextField } from '@/components/Fields'
 import { LogoIcon } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
 import qrCode from '@/images/qr-code.svg'
+import { COMMON_DATA } from '@/data'
 
 function QrCodeBorder(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -28,11 +29,11 @@ export function Footer() {
           <p className="text-sm text-gray-500">
             &copy; Copyright {new Date().getFullYear()}{' '}
             <Link
-              href="http://crazykoder.dev"
+              href={COMMON_DATA.ownerUrl}
               target="_blank"
               className="text-cyan-500"
             >
-              TopExam Platform
+              {COMMON_DATA.ownerName}
             </Link>
             . All rights reserved.
           </p>
